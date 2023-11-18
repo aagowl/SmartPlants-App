@@ -1,34 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
-    <androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".FirstFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp">
-    <Button
-        android:id="@+id/button_first"
+        android:layout_height="wrap_content"
+        android:src="@tools:sample/avatars"
+        android:padding="30dp"
+        android:layout_gravity="center"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next"
-        app:layout_constraintBottom_toTopOf="@id/textview_first"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="10dp"
+        android:textSize="@dimen/title_text_size"
+        android:text="@string/user_greeting"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        />
 
-        <TextView
-            android:id="@+id/textview_first"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button_first"
+            android:layout_marginHorizontal="@dimen/button_horizontal_margin"
+            android:layout_marginVertical="@dimen/button_vertical_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/lorem_ipsum"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_first" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+            android:text="@string/Connect" />
+
+        <Button
+            android:id="@+id/button_second"
+            android:layout_marginHorizontal="@dimen/button_horizontal_margin"
+            android:layout_marginVertical="@dimen/button_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Connect" />
+
+        <Button
+            android:id="@+id/button_third"
+            android:layout_marginHorizontal="@dimen/button_horizontal_margin"
+            android:layout_marginVertical="@dimen/button_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_in" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarSun"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBarWater"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSolar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
