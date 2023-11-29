@@ -35,7 +35,7 @@
 
         <Button
             android:id="@+id/button_first"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@style/PrimaryColoredButton"
             android:layout_marginHorizontal="@dimen/button_horizontal_margin"
             android:layout_marginVertical="@dimen/button_vertical_margin"
             android:layout_width="wrap_content"
