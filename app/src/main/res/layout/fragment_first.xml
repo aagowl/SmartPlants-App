@@ -44,6 +44,7 @@
 
         <Button
             android:id="@+id/button_second"
+            style="@style/PrimaryColoredButton"
             android:layout_marginHorizontal="@dimen/button_horizontal_margin"
             android:layout_marginVertical="@dimen/button_vertical_margin"
             android:layout_width="wrap_content"
@@ -52,6 +53,7 @@
 
         <Button
             android:id="@+id/button_third"
+            style="@style/PrimaryColoredButton"
             android:layout_marginHorizontal="@dimen/button_horizontal_margin"
             android:layout_marginVertical="@dimen/button_vertical_margin"
             android:layout_width="wrap_content"
