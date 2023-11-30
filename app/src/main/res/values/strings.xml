@@ -19,4 +19,7 @@
 
     <string name="user_greeting">Hello SHURG!</string>
     <string name="exp">Experience Points:</string>
+
+    <!-- second fragment -->
+    <sting name="xp">EXP</sting>
 </resources>
