@@ -7,19 +7,27 @@
     tools:context=".FirstFragment"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"/>
+
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="600dp">
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/track_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="@string/track" />
 
     </LinearLayout>
+
 </LinearLayout>
