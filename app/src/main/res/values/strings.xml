@@ -21,5 +21,6 @@
     <string name="exp">Experience Points:</string>
 
     <!-- second fragment -->
-    <sting name="xp">EXP</sting>
+    <string name="xpGained">EXP gained: </string>
+    <string name="nextlvl">EXP until next level: </string>
 </resources>
