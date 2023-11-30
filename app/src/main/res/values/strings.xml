@@ -1,4 +1,4 @@
-<resources>
+<string>
     <string name="app_name">Learning Kotlin</string>
     <string name="action_settings">Settings</string>
     
@@ -30,5 +30,6 @@
     <string name="exp">Experience Points:</string>
 
     <!-- second fragment -->
-    <string name="xp">EXP</string>
+    <string name="xpGained">EXP Gained: </string>
+    <string name="nextLvl">EXP until next level: </string>
 </resources>
