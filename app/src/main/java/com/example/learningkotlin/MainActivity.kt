@@ -14,7 +14,12 @@ import com.example.learningkotlin.databinding.ActivityMainBinding
 import com.jjoe64.graphview.GraphView
 import com.jjoe64.graphview.series.DataPoint
 import com.jjoe64.graphview.series.LineGraphSeries
-
+//bluetooth
+import android.bluetooth.BluetoothAdapter
+import android.bluetooth.BluetoothDevice
+import android.bluetooth.BluetoothManager
+import android.content.Context
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
