@@ -66,6 +66,7 @@
 
             <SeekBar
                 android:id="@+id/seekBar_Three"
+                android:padding="@dimen/question_padding"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
