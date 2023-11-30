@@ -1,4 +1,4 @@
-<string>
+<resources>
     <string name="app_name">Learning Kotlin</string>
     <string name="action_settings">Settings</string>
     
@@ -19,7 +19,10 @@
     <string name="Question_one">I have interacted with peers, and in a positive manner</string>
     <string name="Question_two">I have been keeping active</string>
     <string name="Question_three">I have been getting adequate sleep</string>
-    <string name="Question_four">I have been eating healthy </string>
+    <string name="Question_four">I have been eating healthy</string>
+    <string name="Question_five">My plant has been receiving enough sun</string>
+    <string name="Question_six">My plant has been receiving enough water</string>
+    <string name="Question_seven">Overall, my plant is in good condition</string>
 
 
 
