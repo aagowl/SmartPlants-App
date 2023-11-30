@@ -12,7 +12,9 @@ import com.example.learningkotlin.databinding.FragmentSecondBinding
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class SecondFragment : Fragment() {
-
+  private int exp = 0;
+  private int level = 5;
+  //makes variables for the leveling system
 private var _binding: FragmentSecondBinding? = null
     // This property is only valid between onCreateView and
     // onDestroyView.
