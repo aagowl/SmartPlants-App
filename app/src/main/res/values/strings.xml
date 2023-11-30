@@ -11,6 +11,7 @@
     <string name="Connect">Connect</string>
     <string name="check_in">Check In</string>
     <string name="find">Find a plant</string>
+    <string name="track">Track!</string>
 
     <!-- content descriptions -->
     <string name="plant_pfp">a pretty picture of a plant in a soda can</string>
