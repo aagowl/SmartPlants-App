@@ -4,4 +4,5 @@
     <dimen name="plant_picture_size">60dp</dimen>
     <dimen name="button_horizontal_margin">15dp</dimen>
     <dimen name="button_vertical_margin">20dp</dimen>
+    <dimen name="question_padding">30dp</dimen>
 </resources>
