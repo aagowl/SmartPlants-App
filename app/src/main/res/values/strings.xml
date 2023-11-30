@@ -14,6 +14,15 @@
     <string name="find">Find a plant</string>
     <string name="track">Track!</string>
 
+    <!-- Mental health Questions -->
+    <string name="Question_descriptor">Respond to each statement on a scale of 0-10</string>
+    <string name="Question_one">I have interacted with peers, and in a positive manner</string>
+    <string name="Question_two">I have been keeping active</string>
+    <string name="Question_three">I have been getting adequate sleep</string>
+    <string name="Question_four">I have been eating healthy </string>
+
+
+
     <!-- content descriptions -->
     <string name="plant_pfp">a pretty picture of a plant in a soda can</string>
 
@@ -21,6 +30,5 @@
     <string name="exp">Experience Points:</string>
 
     <!-- second fragment -->
-    <string name="xpGained">EXP gained: </string>
-    <string name="nextlvl">EXP until next level: </string>
+    <string name="xp">EXP</string>
 </resources>

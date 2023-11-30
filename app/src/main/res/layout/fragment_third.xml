@@ -10,8 +10,87 @@
     <ScrollView
         android:layout_width="350dp"
         android:layout_height="400dp"
-        android:layout_marginTop="200dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_descriptor_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Question_descriptor" />
+
+            <TextView
+                android:id="@+id/question_one"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Question_one" />
+
+            <SeekBar
+                android:id="@+id/seekBar_One"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10"
+                android:progress="5" />
+
+            <TextView
+                android:id="@+id/question_two"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Question_two" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Two"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10"
+                android:progress="5" />
+
+            <TextView
+                android:id="@+id/question_three"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Question_three" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Three"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10"
+                android:progress="5" />
+
+            <TextView
+                android:id="@+id/question_four"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Question_four" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Three"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10"
+                android:progress="5" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="300dp"
