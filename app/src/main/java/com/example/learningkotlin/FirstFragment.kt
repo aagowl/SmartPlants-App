@@ -39,6 +39,11 @@ private var _binding: FragmentFirstBinding? = null
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
+        binding.buttonThird.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_thirdFragment)
+        }
+
+
     }
 
 override fun onDestroyView() {
