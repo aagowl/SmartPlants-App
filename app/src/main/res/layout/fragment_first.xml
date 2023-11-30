@@ -14,7 +14,8 @@
         android:layout_gravity="center"
         android:padding="30dp"
         android:src="@tools:sample/avatars"
-        tools:src="@drawable/plant_cropped" />
+        tools:src="@drawable/plant_cropped"
+        android:contentDescription="@string/plant_pfp"/>
 
     <TextView
         android:layout_width="wrap_content"

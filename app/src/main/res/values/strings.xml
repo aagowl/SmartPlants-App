@@ -12,6 +12,9 @@
     <string name="check_in">Check In</string>
     <string name="find">Find a plant</string>
 
+    <!-- content descriptions -->
+    <string name="plant_pfp">a pretty picture of a plant in a soda can</string>
+
     <string name="user_greeting">Hello SHURG!</string>
     <string name="exp">Experience Points:</string>
 </resources>

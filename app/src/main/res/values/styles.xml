@@ -11,7 +11,7 @@
 
     </style>
 
-    <style name="PrimaryColoredButton" parent="Base.Widget.AppCompat.Button.Colored">
+    <style name="PrimaryColoredButton" parent="@style/Widget.Material3.Button">
         <item name="colorButtonNormal">@color/green</item>
         <item name="colorControlHighlight">@color/yellow</item>
     </style>
