@@ -10,6 +10,7 @@
     <!-- button names -->
     <string name="Connect">Connect</string>
     <string name="check_in">Check In</string>
+    <string name="share">Share!</string>
     <string name="find">Find a plant</string>
     <string name="track">Track!</string>
 
