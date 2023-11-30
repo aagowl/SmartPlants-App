@@ -10,6 +10,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.example.learningkotlin.databinding.ActivityMainBinding
+//Line graph Imports
+import com.jjoe64.graphview.GraphView
+import com.jjoe64.graphview.series.DataPoint
+import com.jjoe64.graphview.series.LineGraphSeries
 
 
 class MainActivity : AppCompatActivity() {

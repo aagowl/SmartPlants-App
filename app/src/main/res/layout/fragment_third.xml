@@ -6,12 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment"
     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:context=".MainActivity">
+
+        <!--line graph view where we will
+            be displaying our data-->
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/idGraphView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="350dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
-        android:layout_marginTop="300dp">
+        android:layout_marginTop="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,12 +36,14 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:text="@string/Question_descriptor" />
 
             <TextView
                 android:id="@+id/question_one"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_one" />
 
@@ -39,12 +54,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
+                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
                 android:id="@+id/question_two"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_two" />
 
@@ -55,29 +72,32 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
+                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
                 android:id="@+id/question_three"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_three" />
 
             <SeekBar
                 android:id="@+id/seekBar_three"
-                android:padding="@dimen/question_padding"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
+                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
                 android:id="@+id/question_four"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_four" />
 
@@ -88,12 +108,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
+                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
                 android:id="@+id/question_five"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_five" />
 
@@ -104,12 +126,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
+                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
                 android:id="@+id/question_six"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_six" />
 
@@ -120,12 +144,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
+                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
                 android:id="@+id/question_seven"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_seven" />
 
@@ -136,6 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
+                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
         </LinearLayout>
     </ScrollView>
