@@ -13,7 +13,8 @@ import com.example.learningkotlin.databinding.FragmentSecondBinding
  */
 class SecondFragment : Fragment() {
   private int exp = 0;
-  private int level = 5;
+  private int level = 1;
+  private int levelgrow = 5;
   //makes variables for the leveling system
 private var _binding: FragmentSecondBinding? = null
     // This property is only valid between onCreateView and
@@ -34,11 +35,16 @@ private var _binding: FragmentSecondBinding? = null
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFindPlant.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+            print("works")
+            exp = exp+5;
         }
     }
 override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+if(exp == levelgrow*level){
+  level++;
+}
+//level up, exp required to level up increases by 5 everytime they level up
 }
