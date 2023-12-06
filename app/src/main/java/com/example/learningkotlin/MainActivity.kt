@@ -11,8 +11,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.learningkotlin.databinding.ActivityMainBinding
+import com.example.learningkotlin.databinding.ActivityGraphBinding
 import com.google.android.material.snackbar.Snackbar
-//line Graph
+import android.graphics.Color
+//line graph
 import com.jjoe64.graphview.GraphView
 import com.jjoe64.graphview.series.DataPoint
 import com.jjoe64.graphview.series.LineGraphSeries
@@ -45,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
         }
     }
-override fun onCreateOptionsMenu(menu: Menu): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
@@ -67,12 +69,10 @@ override fun onCreateOptionsMenu(menu: Menu): Boolean {
             || super.onSupportNavigateUp()
     }
 
-    /// on below line we are creating
-    // variables for our graph view
+    private lateinit var graphBinding: ActivityGraphBinding
     lateinit var lineGraphView: GraphView
-
     override fun onCreateGraph(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        super.onCreateGraph(savedInstanceState)
         setContentView(R.layout.fragment_third)
 
         // on below line we are initializing
@@ -113,10 +113,11 @@ override fun onCreateOptionsMenu(menu: Menu): Boolean {
         lineGraphView.viewport.setScrollableY(true)
 
         // on below line we are setting color for series.
-        series.color = R.color.black
+        series.color = Color.BLUE
 
         // on below line we are adding
         // data series to our graph view.
         lineGraphView.addSeries(series)
     }
+
 }
