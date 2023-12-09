@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".ThirdFragment"
     android:orientation="vertical">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:fillViewport="true"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".ThirdFragment">
 
 
         <!--text view for displaying heading-->
         <TextView
             android:id="@+id/idTVHead"
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="50dp"
             android:layout_margin="4dp"
             android:gravity="center"
             android:padding="4dp"
             android:text="@string/app_name"
             android:textAlignment="center"
-            android:textColor="@color/pink"
+            android:textColor="@color/greenDark"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -34,20 +35,20 @@
         <com.jjoe64.graphview.GraphView
             android:id="@+id/idGraphView"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="250dp"
             android:layout_below="@id/idTVHead" />
 
     </RelativeLayout>
 
     <ScrollView
         android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
@@ -195,7 +196,7 @@
 
         <Button
             android:id="@+id/track_button"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="2"

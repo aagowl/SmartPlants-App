@@ -18,6 +18,7 @@
             android:id="@+id/action_FirstFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.learningkotlin.SecondFragment"
@@ -28,8 +29,10 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.learningkotlin.ThirdFragment"
-        android:label="ThirdFragment" />
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/fragment_third"/>
 </navigation>
