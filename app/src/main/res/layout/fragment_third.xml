@@ -10,33 +10,65 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="310dp"
         android:fillViewport="true"
         android:orientation="vertical"
         tools:context=".ThirdFragment">
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/graph_title_height"
+            android:orientation="horizontal"
+            tools:context=".ThirdFragment">
 
         <!--text view for displaying heading-->
         <TextView
-            android:id="@+id/idTVHead"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="4dp"
+            android:id="@+id/idTVHeadWellness"
+            android:layout_width="@dimen/graph_width"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
             android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/app_name"
+
             android:textAlignment="center"
-            android:textColor="@color/greenDark"
-            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/graph_text_size"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVHeadPlant"
+            android:layout_width="@dimen/graph_width"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/Graph_two"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="@dimen/graph_text_size"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/graph_title_height"
+            android:orientation="horizontal"
+            tools:context=".ThirdFragment">
 
         <!--line graph view where we will
             be displaying our data-->
         <com.jjoe64.graphview.GraphView
-            android:id="@+id/idGraphView"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_below="@id/idTVHead" />
+            android:id="@+id/idGraphViewWellness"
+            android:layout_width="@dimen/graph_width"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
+            android:layout_below="@id/idTVHeadWellness" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/idGraphViewPlant"
+            android:layout_width="@dimen/graph_width"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
+            android:layout_below="@id/idTVHeadPlant" />
+        </LinearLayout>
 
     </RelativeLayout>
 
@@ -191,7 +223,7 @@
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="1dp"
         android:orientation="horizontal">
 
         <Button

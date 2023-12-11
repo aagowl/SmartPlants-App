@@ -6,4 +6,8 @@
     <dimen name="button_vertical_margin">20dp</dimen>
     <dimen name="question_top_margin">30dp</dimen>
     <dimen name="Seek_Bar_padding">10dp</dimen>
+    <dimen name="graph_horizontal_margin">5dp</dimen>
+    <dimen name="graph_width">190dp</dimen>
+    <dimen name="graph_title_height">55dp</dimen>
+    <dimen name="graph_text_size">20sp</dimen>
 </resources>

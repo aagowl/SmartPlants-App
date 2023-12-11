@@ -17,6 +17,8 @@
 
     <!-- Mental health Questions -->
     <string name="Question_descriptor">Respond to each statement on a scale of 0-10</string>
+    <string name="Graph_one">Wellness</string>
+    <string name="Graph_two">Plant Health</string>
     <string name="Question_one">I have interacted with peers, and in a positive manner</string>
     <string name="Question_two">I have been keeping active</string>
     <string name="Question_three">I have been getting adequate sleep</string>
