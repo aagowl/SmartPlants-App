@@ -70,6 +70,19 @@
             android:layout_below="@id/idTVHeadPlant" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/xAxis"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="285dp"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Mon Tues Wed Thurs Fri Sat Sun         Mon Tues Wed Thurs Fri Sat Sun"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:backgroundTint="@color/blue"/>
+
     </RelativeLayout>
 
     <ScrollView
