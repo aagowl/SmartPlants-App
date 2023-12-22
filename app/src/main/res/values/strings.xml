@@ -16,16 +16,25 @@
     <string name="track">Track!</string>
 
     <!-- Mental health Questions -->
-    <string name="Question_descriptor">Respond to each statement on a scale of 0-10</string>
     <string name="Graph_one">Wellness</string>
     <string name="Graph_two">Plant Health</string>
-    <string name="Question_one">I have interacted with peers, and in a positive manner</string>
-    <string name="Question_two">I have been keeping active</string>
-    <string name="Question_three">I have been getting adequate sleep</string>
-    <string name="Question_four">I have been eating healthy</string>
-    <string name="Question_five">My plant has been receiving enough sun</string>
-    <string name="Question_six">My plant has been receiving enough water</string>
-    <string name="Question_seven">Overall, my plant is in good condition</string>
+    <string name="legend_one">Social</string>
+    <string name="legend_two">Fitness</string>
+    <string name="legend_three">Sleep</string>
+    <string name="legend_four">Food</string>
+    <string name="legend_five">Sun</string>
+    <string name="legend_six">Water</string>
+    <string name="legend_seven">Plant</string>
+    <string name="Question_descriptor">Respond to each question on a scale of <b>0–10\</b></string>
+    <string name="Question_one">How well have I socialized with peers?</string>
+    <string name="Question_two">How well have I managed my fitness?</string>
+    <string name="Question_three">How well have I been sleeping?</string>
+    <string name="Question_four">How healthy have I been eating?</string>
+    <string name="Question_five">How healthy is the amount of sun my\nplant has been receiving?</string>
+    <string name="Question_six">How healthy is the amount of water my\nplant has been receiving?</string>
+    <string name="Question_seven">Overall, my plant\'s condition is…</string>
+    <string name="x_axis">\ \ \ Mon\ \ Tue\ \ Wed\ \ Thu\ \ Fri\ \ Sat\ \ Sun\ \ \ \ \ \ \ \ Mon\ \ Tue\ \ Wed\ \ Thu\ \ Fri\ \ Sat\ \ Sun\ \ </string>
+    <string name="seekBar_num">\ 0\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10</string>
 
 
 

@@ -4,10 +4,15 @@
     <dimen name="plant_picture_size">60dp</dimen>
     <dimen name="button_horizontal_margin">15dp</dimen>
     <dimen name="button_vertical_margin">20dp</dimen>
-    <dimen name="question_top_margin">30dp</dimen>
-    <dimen name="Seek_Bar_padding">10dp</dimen>
+    <dimen name="question_top_margin">20dp</dimen>
+    <dimen name="check_in_top_margin">10dp</dimen>
+    <dimen name="seek_bar_padding">10dp</dimen>
+    <dimen name="seek_bar_width">275dp</dimen>
     <dimen name="graph_horizontal_margin">5dp</dimen>
     <dimen name="graph_width">185dp</dimen>
-    <dimen name="graph_title_height">55dp</dimen>
+    <dimen name="graph_title_height">30dp</dimen>
     <dimen name="graph_text_size">20sp</dimen>
+    <dimen name="legend_margin_start">4.5dp</dimen>
+    <dimen name="legend_font_size">11sp</dimen>
+    <dimen name="legend_color_width">20dp</dimen>
 </resources>

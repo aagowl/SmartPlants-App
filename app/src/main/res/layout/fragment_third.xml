@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="310dp"
+        android:layout_height="290dp"
         android:fillViewport="true"
         android:orientation="vertical"
         tools:context=".ThirdFragment">
@@ -27,8 +27,7 @@
             android:layout_height="match_parent"
             android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
             android:gravity="center"
-
-            android:textAlignment="center"
+            android:text="@string/Graph_one"
             android:textColor="@color/blue"
             android:textSize="@dimen/graph_text_size"
             android:textStyle="bold" />
@@ -40,7 +39,6 @@
             android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
             android:gravity="center"
             android:text="@string/Graph_two"
-            android:textAlignment="center"
             android:textColor="@color/green"
             android:textSize="@dimen/graph_text_size"
             android:textStyle="bold" />
@@ -59,35 +57,163 @@
             android:id="@+id/idGraphViewWellness"
             android:layout_width="@dimen/graph_width"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
-            android:layout_below="@id/idTVHeadWellness" />
+            android:layout_marginHorizontal="@dimen/graph_horizontal_margin" />
 
         <com.jjoe64.graphview.GraphView
             android:id="@+id/idGraphViewPlant"
             android:layout_width="@dimen/graph_width"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
-            android:layout_below="@id/idTVHeadPlant" />
+            android:layout_marginHorizontal="@dimen/graph_horizontal_margin" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/xAxis"
-            android:layout_width="385dp"
-            android:layout_height="15dp"
-            android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="295dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/graph_horizontal_margin"
+            android:layout_marginTop="275dp"
             android:background="@color/white"
             android:gravity="center"
-            android:text="  Mon  Tue  Wed  Thu  Fri  Sat  Sun       Mon  Tue  Wed  Thu  Fri  Sat  Sun"
+            android:text="@string/x_axis"
             android:textColor="@color/black"
             android:textSize="12sp" />
     </RelativeLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/legend_color_width"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/check_in_top_margin">
+
+        <TextView
+            android:id="@+id/legend_color_one"
+            android:layout_width="@dimen/legend_color_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background = "@color/pink"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_text_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/legend_one"
+            android:textSize="@dimen/legend_font_size"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_color_two"
+            android:layout_width="@dimen/legend_color_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background = "@color/neonGreen"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_text_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/legend_two"
+            android:textSize="@dimen/legend_font_size"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_color_three"
+            android:layout_width="@dimen/legend_color_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background = "@color/turquoise"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_text_three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/legend_three"
+            android:textSize="@dimen/legend_font_size"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_color_four"
+            android:layout_width="@dimen/legend_color_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background = "@color/purple"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_text_four"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/legend_four"
+            android:textSize="@dimen/legend_font_size"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_color_five"
+            android:layout_width="@dimen/legend_color_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background = "@color/yellow"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_text_five"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/legend_five"
+            android:textSize="@dimen/legend_font_size"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_color_six"
+            android:layout_width="@dimen/legend_color_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background = "@color/blue"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_text_six"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/legend_six"
+            android:textSize="@dimen/legend_font_size"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_color_seven"
+            android:layout_width="@dimen/legend_color_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background = "@color/green"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+        <TextView
+            android:id="@+id/legend_text_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/legend_seven"
+            android:textSize="@dimen/legend_font_size"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/legend_margin_start"/>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/question_descriptor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/check_in_top_margin"
+        android:background="@color/grey"
+        android:textColor="@color/black"
+        android:text="@string/Question_descriptor" />
 
     <ScrollView
         android:layout_width="350dp"
-        android:layout_height="300dp"
+        android:layout_height="270dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="@dimen/check_in_top_margin">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,146 +221,186 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/question_descriptor_text"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/question_top_margin"
-                android:text="@string/Question_descriptor" />
-
-            <TextView
                 android:id="@+id/question_one"
-                android:layout_width="275dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
                 android:text="@string/Question_one" />
 
             <SeekBar
                 android:id="@+id/seekBar_one"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="275dp"
+                android:layout_width="@dimen/seek_bar_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="@dimen/seek_bar_padding"
                 android:max="10"
-                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
-                android:id="@+id/question_two"
-                android:layout_width="275dp"
+                android:id="@+id/rangeOne"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
+                android:text="@string/seekBar_num" />
+
+            <TextView
+                android:id="@+id/question_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:text="@string/Question_two" />
 
             <SeekBar
                 android:id="@+id/seekBar_two"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="275dp"
+                android:layout_width="@dimen/seek_bar_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="@dimen/seek_bar_padding"
                 android:max="10"
-                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
-                android:id="@+id/question_three"
-                android:layout_width="275dp"
+                android:id="@+id/rangeTwo"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
+                android:text="@string/seekBar_num" />
+
+            <TextView
+                android:id="@+id/question_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:text="@string/Question_three" />
 
             <SeekBar
                 android:id="@+id/seekBar_three"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="275dp"
+                android:layout_width="@dimen/seek_bar_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="@dimen/seek_bar_padding"
                 android:max="10"
-                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
-                android:id="@+id/question_four"
-                android:layout_width="275dp"
+                android:id="@+id/rangeThree"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
+                android:text="@string/seekBar_num" />
+
+            <TextView
+                android:id="@+id/question_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:text="@string/Question_four" />
 
             <SeekBar
                 android:id="@+id/seekBar_four"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="275dp"
+                android:layout_width="@dimen/seek_bar_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="@dimen/seek_bar_padding"
                 android:max="10"
-                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
-                android:id="@+id/question_five"
-                android:layout_width="275dp"
+                android:id="@+id/rangeFour"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
+                android:text="@string/seekBar_num" />
+
+            <TextView
+                android:id="@+id/question_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:text="@string/Question_five" />
 
             <SeekBar
                 android:id="@+id/seekBar_five"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="275dp"
+                android:layout_width="@dimen/seek_bar_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="@dimen/seek_bar_padding"
                 android:max="10"
-                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
-                android:id="@+id/question_six"
-                android:layout_width="275dp"
+                android:id="@+id/rangeFive"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
+                android:text="@string/seekBar_num" />
+
+            <TextView
+                android:id="@+id/question_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:text="@string/Question_six" />
 
             <SeekBar
                 android:id="@+id/seekBar_six"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="275dp"
+                android:layout_width="@dimen/seek_bar_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="@dimen/seek_bar_padding"
                 android:max="10"
-                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
 
             <TextView
-                android:id="@+id/question_seven"
-                android:layout_width="275dp"
+                android:id="@+id/rangeSix"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_top_margin"
                 android:layout_gravity="center"
+                android:text="@string/seekBar_num" />
+
+            <TextView
+                android:id="@+id/question_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/question_top_margin"
                 android:text="@string/Question_seven" />
 
             <SeekBar
                 android:id="@+id/seekBar_seven"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="275dp"
+                android:layout_width="@dimen/seek_bar_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="@dimen/seek_bar_padding"
                 android:max="10"
-                android:padding="@dimen/Seek_Bar_padding"
                 android:progress="5" />
+
+            <TextView
+                android:id="@+id/rangeSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/seekBar_num" />
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="@dimen/check_in_top_margin"
         android:orientation="horizontal">
 
         <Button
