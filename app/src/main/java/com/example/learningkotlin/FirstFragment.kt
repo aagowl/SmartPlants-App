@@ -35,6 +35,8 @@ private var _binding: FragmentFirstBinding? = null
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.imageView2.setImageResource(R.drawable.plant_cropped)
+
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }

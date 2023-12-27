@@ -14,7 +14,6 @@
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:padding="30dp"
-        tools:src="@drawable/plant_cropped"
         android:contentDescription="@string/plant_pfp"/>
 
     <TextView
