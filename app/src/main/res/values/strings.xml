@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">SmartPlants</string>
     <string name="action_settings">Settings</string>
+    <string name="preference_file_key">com.example.learningkotlin</string>
+    <string name="xp_key">experiencePoints</string>
+    <string name="level_key">userLevel</string>
     
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Home!</string>

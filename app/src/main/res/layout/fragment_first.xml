@@ -25,8 +25,7 @@
         android:text="@string/user_greeting"
         android:layout_gravity="center"
         android:background="@color/white"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,7 +63,7 @@
 
 
     <ProgressBar
-        android:id="@+id/determinateBar"
+        android:id="@+id/progressBarWater"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:padding="10dp"
         android:layout_width="match_parent"
@@ -74,7 +73,7 @@
         android:progress="5"/>
 
     <ProgressBar
-        android:id="@+id/progressBarWater"
+        android:id="@+id/progressBarSolar"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:padding="10dp"
         android:layout_width="match_parent"
@@ -84,13 +83,12 @@
         android:progress="5"/>
 
     <ProgressBar
-        android:id="@+id/progressBarSolar"
+        android:id="@+id/progressBarLevel"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:progressTint="@color/pink"
-        android:progressBackgroundTint="@color/grey"
-        android:progress="5"/>
+        android:progressBackgroundTint="@color/grey"/>
 
 </LinearLayout>

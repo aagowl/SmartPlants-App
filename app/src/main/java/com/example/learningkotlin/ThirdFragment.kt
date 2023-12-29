@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.edit
 import androidx.fragment.app.Fragment
 import com.example.learningkotlin.databinding.FragmentThirdBinding
 import com.jjoe64.graphview.series.DataPoint
@@ -29,13 +28,13 @@ class ThirdFragment : Fragment() {
     private val calendar: Calendar = Calendar.getInstance()
     @SuppressLint("SimpleDateFormat")
     val simpleDateFormat: SimpleDateFormat = SimpleDateFormat("u")
+
     private var sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //loadData()
         _binding = FragmentThirdBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -280,6 +279,30 @@ class ThirdFragment : Fragment() {
         binding.idGraphViewPlant.viewport.isXAxisBoundsManual = true
 
         binding.trackButton.setOnClickListener {
+            val levelingPref = activity?.getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE)
+            val gainedXp = 25
+            var xp: Int = levelingPref!!.getInt((R.string.xp_key).toString(), -1)
+            var level: Int = levelingPref.getInt((R.string.level_key).toString(), -1)
+
+            println(xp)
+            println(level)
+            if (xp != -1 && level != -1)
+            {
+                xp+=gainedXp
+                if (xp >= 100)
+                {
+                    level++
+                    xp -= 100
+                }
+                with (levelingPref.edit()) {
+                    putInt((R.string.xp_key).toString(), xp)
+                    putInt((R.string.level_key).toString(), level)
+                    commit()
+                }
+            }
+
+
             saveData()
             loadData()
         }
