@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">SmartPlants</string>
-    <string name="action_settings">Settings</string>
+
+    <!-- Global keys for storage -->
     <string name="preference_file_key">com.example.learningkotlin</string>
     <string name="xp_key">experiencePoints</string>
     <string name="level_key">userLevel</string>
@@ -8,17 +9,30 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Home!</string>
     <string name="second_fragment_label">Connect!</string>
-    <string name="third_fragment_label">Check in</string>
+    <string name="third_fragment_label">Check In!</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <!-- button names -->
+    <string name="action_settings">Settings</string>
+
+    <!-- first fragment -->
+    <string name="user_greeting">Hello SHURG!</string>
     <string name="Connect">Connect</string>
     <string name="check_in">Check In</string>
     <string name="share">Share!</string>
     <string name="find">Find a plant</string>
-    <string name="track">Track!</string>
+    <string name="waterProgressBar">Water Amount</string>
+    <string name="sunProgressBar">Sun Amount</string>
+    <string name="levelProgressBar">Level:</string>
+    <string name="levelProgressBarXp">XP:</string>
 
-    <!-- Mental health Questions -->
+    <!-- second fragment -->
+    <string name="xpGained">XP Gained: </string>
+    <string name="nextLevel">XP until next level:</string>
+    <string name="leveledUp">Leveled Up! New Level:</string>
+    <string name="exp">Experience Points:</string>
+
+    <!-- third fragment -->
+    <string name="track">Track!</string>
     <string name="Graph_one">Wellness</string>
     <string name="Graph_two">Plant Health</string>
     <string name="legend_one">Social</string>
@@ -39,15 +53,7 @@
     <string name="x_axis">\ \ \ Mon\ \ Tue\ \ Wed\ \ Thu\ \ Fri\ \ Sat\ \ Sun\ \ \ \ \ \ \ \ Mon\ \ Tue\ \ Wed\ \ Thu\ \ Fri\ \ Sat\ \ Sun\ \ </string>
     <string name="seekBar_num">\ 0\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10</string>
 
-
-
     <!-- content descriptions -->
     <string name="plant_pfp">a pretty picture of a plant in a soda can</string>
 
-    <string name="user_greeting">Hello SHURG!</string>
-    <string name="exp">Experience Points:</string>
-
-    <!-- second fragment -->
-    <string name="xpGained">EXP Gained: </string>
-    <string name="nextLvl">EXP until next level: </string>
 </resources>

@@ -34,7 +34,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.imageView2.setImageResource(R.drawable.plant_cropped)
+        binding.imageView.setImageResource(R.drawable.plant_cropped)
 
         val levelingPref = activity?.getSharedPreferences(
             getString(R.string.preference_file_key), Context.MODE_PRIVATE)
@@ -88,6 +88,8 @@ class FirstFragment : Fragment() {
         val xp: Int = levelingPref!!.getInt((R.string.xp_key).toString(), -1)
         var level: Int = levelingPref.getInt((R.string.level_key).toString(), -1)
         binding.progressBarLevel.setProgress(xp, true)
+        binding.textLevel.text = level.toString()
+        binding.textXP.text = xp.toString()
     }
 
 override fun onDestroyView() {

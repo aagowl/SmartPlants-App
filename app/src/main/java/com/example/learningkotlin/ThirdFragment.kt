@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.learningkotlin.databinding.FragmentThirdBinding
 import com.jjoe64.graphview.series.DataPoint
@@ -281,15 +282,21 @@ class ThirdFragment : Fragment() {
         binding.trackButton.setOnClickListener {
             val levelingPref = activity?.getSharedPreferences(
                 getString(R.string.preference_file_key), Context.MODE_PRIVATE)
-            val gainedXp = 25
+
+            dateTime = simpleDateFormat.format(calendar.time).toDouble()
+            val gainedXP: Int
             var xp: Int = levelingPref!!.getInt((R.string.xp_key).toString(), -1)
             var level: Int = levelingPref.getInt((R.string.level_key).toString(), -1)
+            val day: Int = levelingPref.getInt(("Day"), -1)
 
-            println(xp)
-            println(level)
-            if (xp != -1 && level != -1)
+            if (xp != -1 && level != -1 && day != dateTime!!.toInt())
             {
-                xp+=gainedXp
+                gainedXP = 25
+                with (levelingPref.edit()) {
+                    putInt("Day", dateTime!!.toInt())
+                    apply()
+                }
+                xp+=gainedXP
                 if (xp >= 100)
                 {
                     level++
@@ -301,7 +308,11 @@ class ThirdFragment : Fragment() {
                     commit()
                 }
             }
-
+            else
+            {
+                gainedXP = 0
+            }
+            Toast.makeText(context, "Experience Gained: $gainedXP", Toast.LENGTH_LONG).show()
 
             saveData()
             loadData()
