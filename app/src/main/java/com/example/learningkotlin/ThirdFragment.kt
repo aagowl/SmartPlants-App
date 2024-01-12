@@ -17,7 +17,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * The wellness page
  */
 
 class ThirdFragment : Fragment() {
@@ -105,6 +105,7 @@ class ThirdFragment : Fragment() {
     }
 
     private fun graphData(series: PointsGraphSeries<DataPoint>, question: Int, size: Float){
+        // Hey lorenzo maybe use a switch statement here... just a thought
         if (question == 0)
         {
             series.color = Color.rgb(255,92,92)

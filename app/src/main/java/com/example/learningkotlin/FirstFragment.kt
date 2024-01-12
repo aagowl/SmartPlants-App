@@ -13,7 +13,7 @@ import com.example.learningkotlin.databinding.FragmentFirstBinding
 
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * The homepage
  */
 
 class FirstFragment : Fragment() {
