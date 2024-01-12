@@ -52,8 +52,9 @@ class SecondFragment : Fragment() {
             // bluetooth connection
             // requires min api version 26, default min seems to be 24 (i changed that in the settings here) so be careful when building
 
-            val deviceManager =
-                requireContext().getSystemService(Context.COMPANION_DEVICE_SERVICE)
+            val deviceManager: CompanionDeviceManager by lazy {
+                requireContext().getSystemService(Context.COMPANION_DEVICE_SERVICE) as CompanionDeviceManager
+            }
 
             val deviceFilter: BluetoothDeviceFilter = BluetoothDeviceFilter.Builder()
                 // theres not a lot here now but maybe in the future we get all smart plants to
@@ -68,7 +69,7 @@ class SecondFragment : Fragment() {
 
 
             // buggy mess territory proceed with caution
-            /* deviceManager.associate(pairingRequest,
+            /*deviceManager.associate(pairingRequest,
                 object : CompanionDeviceManager.Callback() {
                     // Called when a device is found. Launch the IntentSender so the user
                     // can select the device they want to pair with.
@@ -90,7 +91,9 @@ class SecondFragment : Fragment() {
                 val deviceName = device.name
                 val deviceHardwareAddress = device.address // MAC address
             }
-            */
+
+             */
+
 
 
             // leveling
