@@ -6,6 +6,8 @@ import android.app.Activity.RESULT_OK
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothManager
+import android.bluetooth.BluetoothServerSocket
+import android.bluetooth.BluetoothSocket
 import android.companion.AssociationInfo
 import android.companion.AssociationRequest
 import android.companion.BluetoothDeviceFilter
@@ -16,6 +18,7 @@ import android.content.IntentSender
 import android.net.MacAddress
 import android.os.Build
 import android.os.Bundle
+import android.service.controls.ControlsProviderService.TAG
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -28,6 +31,8 @@ import androidx.core.content.ContextCompat.getSystemService
 import androidx.navigation.fragment.findNavController
 import com.example.learningkotlin.databinding.FragmentSecondBinding
 import org.intellij.lang.annotations.Pattern
+import java.io.IOException
+import java.util.UUID.fromString
 import java.util.concurrent.Executor
 
 /**
@@ -76,6 +81,8 @@ class SecondFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -230,5 +237,7 @@ class SecondFragment : Fragment() {
     companion object {
         private const val SELECT_DEVICE_REQUEST_CODE = 0
         private const val BLUETOOTH_DEVICE_NAME_REGEX_TO_FILTER_FOR = ""
+        public const val NAME = "SmartPlants"
+        public val MY_UUID = fromString("7bb4ac1c-0fc9-4b2f-99d0-362bf30e6293")
     }
 }

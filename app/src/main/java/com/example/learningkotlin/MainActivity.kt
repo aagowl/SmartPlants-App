@@ -1,38 +1,46 @@
 package com.example.learningkotlin
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothManager
+import android.bluetooth.BluetoothServerSocket
+import android.bluetooth.BluetoothSocket
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.service.controls.ControlsProviderService
+import android.service.controls.ControlsProviderService.TAG
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.learningkotlin.databinding.ActivityMainBinding
+import java.io.IOException
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private val enableBluetoothIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
+    private var bluetoothAdapter: BluetoothAdapter? = null
 
     private var bluetoothEnableResultLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
 
             when (result.resultCode) {
                 Activity.RESULT_OK -> {
-                    // success!
+                    val bluetoothManager: BluetoothManager = getSystemService(BluetoothManager::class.java)
+                    bluetoothAdapter = bluetoothManager.getAdapter()
                 }
                 Activity.RESULT_CANCELED -> {
                     // oh no :(
@@ -91,7 +99,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupViews() {
-        // Here we setup the behavior of the button in our rationale dialog: basically we need to
         // rerun the permissions check logic if it was already denied
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             requestBluetoothPermissionLauncher.launch(android.Manifest.permission.BLUETOOTH_CONNECT)
@@ -103,7 +110,7 @@ class MainActivity : AppCompatActivity() {
     private fun checkBluetoothEnabled() {
         // bluetooth set up
         val bluetoothManager: BluetoothManager = getSystemService(BluetoothManager::class.java)
-        val bluetoothAdapter: BluetoothAdapter? = bluetoothManager.getAdapter()
+        val bluetoothAdapter: BluetoothAdapter = bluetoothManager.getAdapter()
 
         // displays message if the device doesn't support bluetooth
         if (bluetoothAdapter == null) {
@@ -154,6 +161,52 @@ class MainActivity : AppCompatActivity() {
                 }
 
             }
+    }
+
+
+    // bluetooth server socket connection thread
+    // opens a serverside socket for a client to begin to initiate a bluetooth connection
+    // closes after a connection is formed
+
+    @SuppressLint("MissingPermission")
+    private inner class AcceptThread : Thread() {
+
+        private val mmServerSocket: BluetoothServerSocket? by lazy(LazyThreadSafetyMode.NONE) {
+            bluetoothAdapter?.listenUsingInsecureRfcommWithServiceRecord(
+                SecondFragment.NAME,
+                SecondFragment.MY_UUID
+            )
+        }
+
+
+
+        override fun run() {
+            // Keep listening until exception occurs or a socket is returned.
+            var shouldLoop = true
+            while (shouldLoop) {
+                val socket: BluetoothSocket? = try {
+                    mmServerSocket?.accept()
+                } catch (e: IOException) {
+                    Log.e(ControlsProviderService.TAG, "Socket's accept() method failed", e)
+                    shouldLoop = false
+                    null
+                }
+                socket?.also {
+                    // manageMyConnectedSocket(it)
+                    mmServerSocket?.close()
+                    shouldLoop = false
+                }
+            }
+        }
+
+        // Closes the connect socket and causes the thread to finish.
+        fun cancel() {
+            try {
+                mmServerSocket?.close()
+            } catch (e: IOException) {
+                Log.e(ControlsProviderService.TAG, "Could not close the connect socket", e)
+            }
+        }
     }
 
 }
