@@ -209,4 +209,28 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // send and get text data from chip
+    class BluetoothService(
+        private val socket: BluetoothSocket,
+    ) : Thread() {
+        private val inputStream = socket.inputStream
+
+        //We only need 1Byte for reading 0 or 1 from raspberry result
+        private val buffer = ByteArray(1)
+        override fun run() {
+            // Keep listening to the InputStream until an exception occurs.
+            while (true) {
+                try {
+                    //Read from the InputStream
+                    inputStream.read(buffer)
+                } catch (e: IOException) {
+                    Log.i(TAG, "Input stream was disconnected", e)
+                    break
+                }
+                // Send the obtained bytes to the UI activity.
+                val text = String(buffer)
+            }
+        }
+    }
+
 }
