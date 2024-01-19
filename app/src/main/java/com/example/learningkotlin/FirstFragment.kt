@@ -62,7 +62,7 @@ class FirstFragment : Fragment() {
             sharingIntent.type = "text/plain"
 
             // Body of the content
-            val shareBody = "Your Body Here"
+            val shareBody = "Share your plant!"
 
             // subject of the content. you can share anything
             val shareSubject = "Your Subject Here"
