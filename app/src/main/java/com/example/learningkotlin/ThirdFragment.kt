@@ -67,79 +67,69 @@ class ThirdFragment : Fragment() {
     }
 
     private fun graphData(series: LineGraphSeries<DataPoint>, question: Int){
-        if (question == 0)
-        {
-            series.color = Color.rgb(255,92,92)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 1)
-        {
-            series.color = Color.rgb(57,255,20)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 2)
-        {
-            series.color = Color.rgb(117,230,218)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 3)
-        {
-            series.color = Color.rgb(191,64,191)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 4)
-        {
-            series.color = Color.rgb(255,203,71)
-            binding.idGraphViewPlant.addSeries(series)
-        }
-        else if (question == 5)
-        {
-            series.color = Color.rgb(117,118,189)
-            binding.idGraphViewPlant.addSeries(series)
-        }
-        else if (question == 6)
-        {
-            series.color = Color.rgb(89,139,44)
-            binding.idGraphViewPlant.addSeries(series)
+        when (question) {
+            0 -> {
+                series.color = Color.rgb(255,92,92)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            1 -> {
+                series.color = Color.rgb(57,255,20)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            2 -> {
+                series.color = Color.rgb(117,230,218)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            3 -> {
+                series.color = Color.rgb(191,64,191)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            4 -> {
+                series.color = Color.rgb(255,203,71)
+                binding.idGraphViewPlant.addSeries(series)
+            }
+            5 -> {
+                series.color = Color.rgb(117,118,189)
+                binding.idGraphViewPlant.addSeries(series)
+            }
+            6 -> {
+                series.color = Color.rgb(89,139,44)
+                binding.idGraphViewPlant.addSeries(series)
+            }
         }
     }
 
     private fun graphData(series: PointsGraphSeries<DataPoint>, question: Int, size: Float){
         // Hey lorenzo maybe use a switch statement here... just a thought
-        if (question == 0)
-        {
-            series.color = Color.rgb(255,92,92)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 1)
-        {
-            series.color = Color.rgb(57,255,20)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 2)
-        {
-            series.color = Color.rgb(117,230,218)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 3)
-        {
-            series.color = Color.rgb(191,64,191)
-            binding.idGraphViewWellness.addSeries(series)
-        }
-        else if (question == 4)
-        {
-            series.color = Color.rgb(255,203,71)
-            binding.idGraphViewPlant.addSeries(series)
-        }
-        else if (question == 5)
-        {
-            series.color = Color.rgb(117,118,189)
-            binding.idGraphViewPlant.addSeries(series)
-        }
-        else if (question == 6)
-        {
-            series.color = Color.rgb(89,139,44)
-            binding.idGraphViewPlant.addSeries(series)
+        when (question) {
+            0 -> {
+                series.color = Color.rgb(255,92,92)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            1 -> {
+                series.color = Color.rgb(57,255,20)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            2 -> {
+                series.color = Color.rgb(117,230,218)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            3 -> {
+                series.color = Color.rgb(191,64,191)
+                binding.idGraphViewWellness.addSeries(series)
+            }
+            4 -> {
+                series.color = Color.rgb(255,203,71)
+                binding.idGraphViewPlant.addSeries(series)
+            }
+            5 -> {
+                series.color = Color.rgb(117,118,189)
+                binding.idGraphViewPlant.addSeries(series)
+            }
+            6 -> {
+                series.color = Color.rgb(89,139,44)
+                binding.idGraphViewPlant.addSeries(series)
+            }
         }
         series.shape = PointsGraphSeries.Shape.POINT
         series.size = size

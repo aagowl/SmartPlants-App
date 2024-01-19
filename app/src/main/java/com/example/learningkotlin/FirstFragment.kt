@@ -13,7 +13,7 @@ import com.example.learningkotlin.databinding.FragmentFirstBinding
 
 
 /**
- * The homepage
+ * A simple [Fragment] subclass as the default destination in the navigation.
  */
 
 class FirstFragment : Fragment() {
@@ -62,10 +62,10 @@ class FirstFragment : Fragment() {
             sharingIntent.type = "text/plain"
 
             // Body of the content
-            val shareBody = "My SmartPlant Progress!"
+            val shareBody = "Your Body Here"
 
             // subject of the content. you can share anything
-            val shareSubject = "My SmartPlant Progress!"
+            val shareSubject = "Your Subject Here"
 
             // passing body of the content
             sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody)
