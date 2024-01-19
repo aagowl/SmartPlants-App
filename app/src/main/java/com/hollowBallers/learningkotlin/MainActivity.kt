@@ -1,4 +1,4 @@
-package com.example.learningkotlin
+package com.hollowBallers.learningkotlin
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -23,7 +23,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.learningkotlin.databinding.ActivityMainBinding
+import com.hollowBallers.learningkotlin.databinding.ActivityMainBinding
 import java.io.IOException
 
 

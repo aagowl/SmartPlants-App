@@ -1,13 +1,10 @@
-package com.example.learningkotlin
+package com.hollowBallers.learningkotlin
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Activity.RESULT_OK
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
-import android.bluetooth.BluetoothManager
-import android.bluetooth.BluetoothServerSocket
-import android.bluetooth.BluetoothSocket
 import android.companion.AssociationInfo
 import android.companion.AssociationRequest
 import android.companion.BluetoothDeviceFilter
@@ -18,20 +15,14 @@ import android.content.IntentSender
 import android.net.MacAddress
 import android.os.Build
 import android.os.Bundle
-import android.service.controls.ControlsProviderService.TAG
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
-import androidx.core.content.ContextCompat.getSystemService
-import androidx.navigation.fragment.findNavController
-import com.example.learningkotlin.databinding.FragmentSecondBinding
-import org.intellij.lang.annotations.Pattern
-import java.io.IOException
+import com.hollowBallers.learningkotlin.databinding.FragmentSecondBinding
 import java.util.UUID.fromString
 import java.util.concurrent.Executor
 

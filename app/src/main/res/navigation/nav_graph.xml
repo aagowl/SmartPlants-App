@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.learningkotlin.FirstFragment"
+        android:name="com.hollowBallers.learningkotlin.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first" >
 
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.learningkotlin.SecondFragment"
+        android:name="com.hollowBallers.learningkotlin.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second" >
 
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.example.learningkotlin.ThirdFragment"
+        android:name="com.hollowBallers.learningkotlin.ThirdFragment"
         android:label="@string/third_fragment_label"
         tools:layout="@layout/fragment_third"/>
 </navigation>

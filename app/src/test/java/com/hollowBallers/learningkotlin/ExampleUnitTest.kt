@@ -1,4 +1,4 @@
-package com.example.learningkotlin
+package com.hollowBallers.learningkotlin
 
 import org.junit.Test
 
