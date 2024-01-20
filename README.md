@@ -1,5 +1,10 @@
 # SmartPlants-App
+![alt text](https://media.discordapp.net/attachments/892936950317711403/1185378620194164856/PXL_20231216_002943759.jpg?ex=65bd895e&is=65ab145e&hm=e8225d736745f323e217d8687b6d6f6d04fc89e397500e9df90e2506d8ba0079&=&format=webp&width=350&height=465)
 
+## About this Project
+This project was created as a part of the New Mexico Governers State Challenge 2024. This is the repo for the companion app that accompanies a prototype of our SmartPlant device. Code for the Arduino Nano that we used in our project can be found ![here!](https://replit.com/@Aagowl/STEMproject2024arduino)
+
+## Extended Summary and reasons behind our project
 Mental health concerns are a significant problem within New Mexican communities. Several different factors have led to our state feeling particularly depressed or just simply down. Especially after the COVID-19 pandemic, many people have been left feeling lonely, isolated, disillusioned, and rather sad. 
 
 SmartPlants aims to address these concerns by providing users the opportunity to easily take care of a plant, increase their own mental wellbeing through mindfulness, and connect to a wider community. Our product includes a device that can be attached to a plant to measure its solar and water levels as well as containing an L.C.D screen and a bluetooth chip. Our product also comes with a companion app, in which the user can see their plant's progress and connect with other users. By increasing mindfulness and community interaction, our product aims to increase the mental well-being of our communities. 
