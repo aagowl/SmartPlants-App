@@ -174,17 +174,15 @@ class SecondFragment : Fragment() {
             // Called when a device is found. Launch the IntentSender so the user
             // can select the device they want to pair with.
             override fun onAssociationPending(intentSender: IntentSender) {
-                intentSender?.let {
-                    startIntentSenderForResult(
-                        it,
-                        SELECT_DEVICE_REQUEST_CODE,
-                        null,
-                        0,
-                        0,
-                        0,
-                        null
-                    )
-                }
+                startIntentSenderForResult(
+                    intentSender,
+                    SELECT_DEVICE_REQUEST_CODE,
+                    null,
+                    0,
+                    0,
+                    0,
+                    null
+                )
             }
 
             override fun onAssociationCreated(associationInfo: AssociationInfo) {
@@ -207,6 +205,7 @@ class SecondFragment : Fragment() {
             object : CompanionDeviceManager.Callback() {
                 // Called when a device is found. Launch the IntentSender so the user
                 // can select the device they want to pair with.
+                @Deprecated("Deprecated in Java")
                 override fun onDeviceFound(chooserLauncher: IntentSender) {
                     startIntentSenderForResult(
                         chooserLauncher,

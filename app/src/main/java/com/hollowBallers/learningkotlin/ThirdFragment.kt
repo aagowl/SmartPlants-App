@@ -41,13 +41,13 @@ class ThirdFragment : Fragment() {
     }
 
     private fun saveData(){
-        val Q1 = binding.seekBarOne.progress.toDouble()
-        val Q2 = binding.seekBarTwo.progress.toDouble()
-        val Q3 = binding.seekBarThree.progress.toDouble()
-        val Q4 = binding.seekBarFour.progress.toDouble()
-        val plantQ1 = binding.seekBarFive.progress.toDouble()
-        val plantQ2 = binding.seekBarSix.progress.toDouble()
-        val plantQ3 = binding.seekBarSeven.progress.toDouble()
+        val questionOne = binding.seekBarOne.progress.toDouble()
+        val questionTwo = binding.seekBarTwo.progress.toDouble()
+        val questionThree = binding.seekBarThree.progress.toDouble()
+        val questionFour = binding.seekBarFour.progress.toDouble()
+        val plantQOne = binding.seekBarFive.progress.toDouble()
+        val plantQTwo = binding.seekBarSix.progress.toDouble()
+        val plantQThree = binding.seekBarSeven.progress.toDouble()
 
         dateTime = simpleDateFormat.format(calendar.time).toDouble()
         val key: Int = dateTime!!.toInt()-1     //Format: IntInt   Question#Day
@@ -55,13 +55,13 @@ class ThirdFragment : Fragment() {
 
         sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
         with (sharedPref!!.edit()) {
-            putInt("0${key}", Q1.toInt())
-            putInt("1${key}", Q2.toInt())
-            putInt("2${key}", Q3.toInt())
-            putInt("3${key}", Q4.toInt())
-            putInt("4${key}", plantQ1.toInt())
-            putInt("5${key}", plantQ2.toInt())
-            putInt("6${key}", plantQ3.toInt())
+            putInt("0${key}", questionOne.toInt())
+            putInt("1${key}", questionTwo.toInt())
+            putInt("2${key}", questionThree.toInt())
+            putInt("3${key}", questionFour.toInt())
+            putInt("4${key}", plantQOne.toInt())
+            putInt("5${key}", plantQTwo.toInt())
+            putInt("6${key}", plantQThree.toInt())
             commit()
         }
     }

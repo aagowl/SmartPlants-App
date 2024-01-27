@@ -39,7 +39,7 @@ class FirstFragment : Fragment() {
             getString(R.string.preference_file_key), Context.MODE_PRIVATE)
         var xp: Int = levelingPref!!.getInt((R.string.xp_key).toString(), -1)
         var level: Int = levelingPref.getInt((R.string.level_key).toString(), -1)
-        if (level == -1)
+        if (level == -1 || xp == -1)
         {
             level = 1
             xp = 5
@@ -85,7 +85,7 @@ class FirstFragment : Fragment() {
         val levelingPref = activity?.getSharedPreferences(
             getString(R.string.preference_file_key), Context.MODE_PRIVATE)
         val xp: Int = levelingPref!!.getInt((R.string.xp_key).toString(), -1)
-        var level: Int = levelingPref.getInt((R.string.level_key).toString(), -1)
+        val level: Int = levelingPref.getInt((R.string.level_key).toString(), -1)
         binding.progressBarLevel.setProgress(xp, true)
         binding.textLevel.text = level.toString()
         binding.textXP.text = xp.toString()
