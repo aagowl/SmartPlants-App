@@ -1,2 +1,14 @@
 # SmartPlants-App
-im testing to see if editing here actually does anything useful!
+![alt text](https://media.discordapp.net/attachments/892936950317711403/1185378620194164856/PXL_20231216_002943759.jpg?ex=65bd895e&is=65ab145e&hm=e8225d736745f323e217d8687b6d6f6d04fc89e397500e9df90e2506d8ba0079&=&format=webp&width=350&height=465)
+
+## About this Project
+This project was created as a part of the New Mexico Governers State Challenge 2024. This is the repo for the companion app that accompanies a prototype of our SmartPlant device. Code for the Arduino Nano that we used in our project can be found ![here!](https://replit.com/@Aagowl/STEMproject2024arduino)
+
+## Extended Summary and reasons behind our project
+Mental health concerns are a significant problem within New Mexican communities. Several different factors have led to our state feeling particularly depressed or just simply down. Especially after the COVID-19 pandemic, many people have been left feeling lonely, isolated, disillusioned, and rather sad. 
+
+SmartPlants aims to address these concerns by providing users the opportunity to easily take care of a plant, increase their own mental wellbeing through mindfulness, and connect to a wider community. Our product includes a device that can be attached to a plant to measure its solar and water levels as well as containing an L.C.D screen and a bluetooth chip. Our product also comes with a companion app, in which the user can see their plant's progress and connect with other users. By increasing mindfulness and community interaction, our product aims to increase the mental well-being of our communities. 
+
+Our future plans for this project are to improve both the software and hardware sides of our smart plants to help people who are suffering mentally from the recent pandemic that has affected many people across the world. People like this would greatly benefit from a companion at their side during these difficult times, whatever form this takes, even a plant. Studies have shown that this can positively affect the mental health of people, so we want to make plants more accessible and adequate towards the mental health needs of the people. 
+
+This is where our SmartPlant comes in, as it was designed to be better than one’s average house plant. Our plant has been put in a casing that can improve the mobility of the plant. This plant is also equipped with an L.E.D. screen to show emotions and other electronics that both monitor the plant’s wellbeing and help our app’s interaction with our plant. These electronics along with the app strengthen the bond between the plant and the user by giving the user insight as to how the plant is feeling and humanizing it. The app furthers the connection by giving an easy and convenient way to check up on your plant, as well as being a social hub for others with a SmartPlant, where you can take your plants on plant playdates. All of this makes it easier to care for the plant and highlights some of the best aspects of having a plant, making it a superior alternative to a normal plant. 
